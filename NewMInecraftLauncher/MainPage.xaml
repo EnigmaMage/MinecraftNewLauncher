@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:helpers="clr-namespace:NewMInecraftLauncher.Helpers"
+             xmlns:templates="clr-namespace:NewMInecraftLauncher.Templates"
+             xmlns:viewmodels="clr-namespace:NewMInecraftLauncher.ViewModels"
+             x:DataType="viewmodels:MainPageViewModel"
+             x:Class="NewMInecraftLauncher.MainPage"
+             Shell.NavBarIsVisible="False">
+
+    <ContentPage.Content>
+        <Grid ColumnDefinitions="84,*">
+            <Grid Grid.Column="0" BackgroundColor="#161717" Padding="10,10" RowSpacing="30">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Image Source="logo.png" HorizontalOptions="Center" VerticalOptions="Start"/>
+                <ScrollView Grid.Row="1" VerticalOptions="CenterAndExpand">
+                    <VerticalStackLayout Spacing="15">
+                        <Button CornerRadius="10" BackgroundColor="#110f11" WidthRequest="50" HeightRequest="50">
+                            <Button.ImageSource>
+                                <FontImageSource
+                                      FontFamily="MaterialIcons"
+                                      Glyph="&#xe1c4;"
+                                      Color="#565656"
+                                      Size="25" />  
+                            </Button.ImageSource>
+                        </Button>
+
+                        <Button CornerRadius="10" BackgroundColor="#110f11" WidthRequest="50" HeightRequest="50">
+                            <Button.ImageSource>
+                                <FontImageSource
+                                  FontFamily="MaterialIcons"
+                                  Glyph="&#xe7fd;"
+                                  Color="#565656"
+                                  Size="25" />
+                            </Button.ImageSource>
+                        </Button>
+
+                        <Button CornerRadius="10" BackgroundColor="#110f11" WidthRequest="50" HeightRequest="50">
+                            <Button.ImageSource>
+                                <FontImageSource
+                                      FontFamily="MaterialIcons"
+                                      Glyph="&#xe5c3;"
+                                      Color="#565656"
+                                      Size="25" />
+                            </Button.ImageSource>
+                        </Button>
+                        <Button CornerRadius="10" BackgroundColor="#110f11" WidthRequest="50" HeightRequest="50">
+                            <Button.ImageSource>
+                                <FontImageSource
+                                      FontFamily="MaterialIcons"
+                                      Glyph="&#xe8d1;"
+                                      Color="#565656"
+                                      Size="25" />
+                            </Button.ImageSource>
+                        </Button>
+
+                    </VerticalStackLayout>
+                </ScrollView>
+                <Button CornerRadius="10" BackgroundColor="#322258" WidthRequest="50" HeightRequest="50" Grid.Row="2" VerticalOptions="End">
+                    <Button.ImageSource>
+                        <FontImageSource
+                      FontFamily="MaterialIcons"
+                      Glyph="&#xe8b8;"
+                      Color="#7a42ff"
+                      Size="25" />
+                    </Button.ImageSource>
+                </Button>
+            </Grid>
+            <ScrollView Grid.Column="1" Background="#110f11" Padding="25">
+                <Grid RowDefinitions="*,Auto" RowSpacing="20">
+                    <Grid ColumnDefinitions="*, Auto" ColumnSpacing="25">
+                        <Border StrokeShape="RoundRectangle 10,10,10,10" StrokeThickness="0" Stroke="Transparent">
+                            <Grid>
+                                <AbsoluteLayout>
+                                    <Image Source="https://www.gamespot.com/a/uploads/original/1632/16320660/3912584-2f0e7-16345886554882-1920.jpg" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="0,0, 1, 1"
+                                        AbsoluteLayout.LayoutFlags="SizeProportional"/>
+                                </AbsoluteLayout>
+                                <StackLayout BackgroundColor="#90000000" VerticalOptions="FillAndExpand">
+                                    <Grid Padding="37,15" RowDefinitions="Auto, Auto, *, Auto" RowSpacing="15" VerticalOptions="CenterAndExpand">
+                                        <Label Text="Minecraft 1.20.2" FontSize="30" FontAttributes="Bold"/>
+                                        <Border Grid.Row="1" StrokeShape="RoundRectangle 50,50,50,50" Padding="25,3" Stroke="#3068c615" HorizontalOptions="Start" Background="#3068c615">
+                                            <Label Text="Custom modpack" FontSize="12" VerticalOptions="Center"/>
+                                        </Border>
+                                        <Label Grid.Row="2" Text="Trails and Tales is a major update released on June 7, 2023 as Java Edition 1.20 and Bedrock Edition 1.20.0.[1] Its theme is creativity and self-expression through representation and storytelling, focusing mostly on decorative blocks, customization options and resources for player-driven in-game storytelling and roleplay." FontSize="12" CharacterSpacing="1" FontAttributes="Bold"/>
+                                        <Grid Grid.Row="3" ColumnDefinitions="Auto, Auto" ColumnSpacing="5">
+                                            <Border StrokeShape="RoundRectangle 5,5,5,5" Background="#68c615" Stroke="#5068c615" Padding="30,5">
+                                                <VerticalStackLayout HorizontalOptions="Center">
+                                                    <Label Text="Launch 1.20.2" TextTransform="Uppercase" FontAttributes="Bold" HorizontalOptions="Center" FontSize="20"/>
+                                                    <HorizontalStackLayout Spacing="2" HorizontalOptions="Center">
+                                                        <Label
+                                                        FontFamily="MaterialIcons"
+                                                        FontSize="14"
+                                                        HorizontalOptions="Center"
+                                                        VerticalOptions="Center" 
+                                                        Text="{x:Static helpers:MaterialIcons.Sports_esports}">
+                                                        </Label>
+                                                        <Label
+                                                            TextTransform="Uppercase"
+                                                            FontSize="12"
+                                                            Text="Ready To Launch"
+                                                            VerticalOptions="Center" />
+                                                    </HorizontalStackLayout>
+                                                </VerticalStackLayout>
+                                            </Border>
+                                            <Button VerticalOptions="CenterAndExpand" Grid.Column="1" Padding="0" Background="#3068c615" WidthRequest="5" HeightRequest="5">
+                                                <Button.ImageSource>
+                                                    <FontImageSource
+                                                         FontFamily="MaterialIcons"
+                                                         Glyph="&#xe86a;"
+                                                         Color="#68c615"
+                                                         Size="20" />
+                                                </Button.ImageSource>
+                                            </Button>
+                                        </Grid>
+                                    </Grid>
+                                </StackLayout>
+                            </Grid>
+
+                        </Border>
+                        <Grid RowDefinitions="*" Grid.Column="1" VerticalOptions="End">
+                            <Border StrokeShape="RoundRectangle 10,10,10,10" StrokeThickness="0" Stroke="Transparent" Background="#1e1c1e" Padding="35,15" Grid.Row="1">
+                                <VerticalStackLayout Spacing="10" Grid.Row="1">
+                                    <Label Text="EnigmaMage" Grid.Row="0" HorizontalOptions="Center" FontAttributes="Bold"/>
+                                    <HorizontalStackLayout Grid.Row="1" Spacing="7">
+                                        <Button Text="Manage Account" Background="#322258" TextColor="#733ef0"></Button>
+                                        <Button Background="#322258">
+                                            <Button.ImageSource>
+                                                <FontImageSource
+                        FontFamily="MaterialIcons"
+                        Glyph="&#xe7fe;"
+                        Color="#733ef0"
+                        Size="20" />
+                                            </Button.ImageSource>
+                                        </Button>
+                                    </HorizontalStackLayout>
+                                    <Button Text="Your Friends" Background="#110f11" TextColor="White"></Button>
+                                    <Button Text="Logout..." Background="Transparent" TextColor="#494749"></Button>
+                                </VerticalStackLayout>
+                            </Border>
+                        </Grid>
+                    </Grid>
+                    <Border StrokeShape="RoundRectangle 10,10,10,10" StrokeThickness="0" Grid.Row="1" Padding="0,20" Background="#1e1c1e" VerticalOptions="EndAndExpand">
+                        <CollectionView
+                            x:Name="NewListings"
+                            Grid.Row="1"
+                            Margin="15,0"
+                            ItemsSource="{Binding News}"
+                            SelectionMode="None"
+                            VerticalScrollBarVisibility="Never"
+                            > 
+                            <CollectionView.ItemsLayout>
+                                <LinearItemsLayout ItemSpacing="4" Orientation="Horizontal" />
+                            </CollectionView.ItemsLayout>
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <templates:NewsCardTemplate Margin="0,0,10,0" WidthRequest="290" />
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </Border>
+                </Grid>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>

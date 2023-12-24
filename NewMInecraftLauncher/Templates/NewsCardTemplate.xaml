@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:NewMInecraftLauncher.Models"
+             x:DataType="models:News"
+             x:Class="NewMInecraftLauncher.Templates.NewsCardTemplate">
+    <Border StrokeShape="RoundRectangle 10,10,10,10" Stroke="Transparent" Padding="0" Margin="0">
+        <VerticalStackLayout>
+            <Image HeightRequest="125" Source="{Binding Image}" Aspect="AspectFill"/>
+            <Grid ColumnDefinitions="*, Auto" Padding="15" Background="#181818">
+                <VerticalStackLayout HorizontalOptions="Start" Spacing="5">
+                    <Label Text="{Binding Name}" LineBreakMode="TailTruncation" FontAttributes="Bold"/>
+                    <Label Text="{Binding Description}" LineBreakMode="TailTruncation"/>
+                </VerticalStackLayout>
+                <Button CornerRadius="10" Grid.Column="1" Padding="0" BackgroundColor="#508445ff">
+                    <Button.ImageSource>
+                        <FontImageSource
+                            FontFamily="MaterialIcons"
+                            Glyph="&#xe80d;"
+                            Color="#8445ff"
+                            Size="20" />
+                    </Button.ImageSource>
+                </Button>
+            </Grid>
+        </VerticalStackLayout>
+    </Border>
+</ContentView>
