@@ -28,11 +28,11 @@ namespace NewMInecraftLauncher.ViewModels
             NewsColors.Add("f43f4c");
             News = new ObservableCollection<News>();
 
-            for (int i = 1; i <= 10; i++)
+            for (int i = 1; i <= 5; i++)
             {
                 News.Add(new Models.News
                 {
-                    Name = $"Title{i.ToString()}",
+                    Title = $"Title{i.ToString()}",
                     Description = $"Description{i.ToString()}",
                     Image = ImageSource.FromUri(new Uri("https://picsum.photos/1024/720"))
                 });

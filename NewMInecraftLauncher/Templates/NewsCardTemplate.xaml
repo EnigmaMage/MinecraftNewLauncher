@@ -7,9 +7,9 @@
     <Border StrokeShape="RoundRectangle 10,10,10,10" Stroke="Transparent" Padding="0" Margin="0">
         <VerticalStackLayout>
             <Image HeightRequest="125" Source="{Binding Image}" Aspect="AspectFill"/>
-            <Grid ColumnDefinitions="*, Auto" Padding="15" Background="#181818">
+            <Grid ColumnDefinitions="*, Auto" Padding="15" Background="#181818" ColumnSpacing="10">
                 <VerticalStackLayout HorizontalOptions="Start" Spacing="5">
-                    <Label Text="{Binding Name}" LineBreakMode="TailTruncation" FontAttributes="Bold"/>
+                    <Label Text="{Binding Title}" LineBreakMode="TailTruncation" FontAttributes="Bold"/>
                     <Label Text="{Binding Description}" LineBreakMode="TailTruncation"/>
                 </VerticalStackLayout>
                 <Button CornerRadius="10" Grid.Column="1" Padding="0" BackgroundColor="#508445ff">
