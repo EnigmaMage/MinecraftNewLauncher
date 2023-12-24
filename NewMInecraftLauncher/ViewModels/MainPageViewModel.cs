@@ -33,7 +33,7 @@ namespace NewMInecraftLauncher.ViewModels
                 News.Add(new Models.News
                 {
                     Name = $"Title{i.ToString()}",
-                    Description = $"Title{i.ToString()}",
+                    Description = $"Description{i.ToString()}",
                     Image = ImageSource.FromUri(new Uri("https://picsum.photos/1024/720"))
                 });
             }

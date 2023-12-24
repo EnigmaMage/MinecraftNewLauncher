@@ -125,7 +125,7 @@
                             <Border StrokeShape="RoundRectangle 10,10,10,10" StrokeThickness="0" Stroke="Transparent" Background="#1e1c1e" Padding="35,15" Grid.Row="1">
                                 <VerticalStackLayout Spacing="10" Grid.Row="1">
                                     <Label Text="EnigmaMage" Grid.Row="0" HorizontalOptions="Center" FontAttributes="Bold"/>
-                                    <HorizontalStackLayout Grid.Row="1" Spacing="7">
+                                    <HorizontalStackLayout Grid.Row="1" Spacing="10">
                                         <Button Text="Manage Account" Background="#322258" TextColor="#733ef0"></Button>
                                         <Button Background="#322258">
                                             <Button.ImageSource>
@@ -134,11 +134,12 @@
                         Glyph="&#xe7fe;"
                         Color="#733ef0"
                         Size="20" />
+
                                             </Button.ImageSource>
                                         </Button>
                                     </HorizontalStackLayout>
                                     <Button Text="Your Friends" Background="#110f11" TextColor="White"></Button>
-                                    <Button Text="Logout..." Background="Transparent" TextColor="#494749"></Button>
+                                    <Button Text="Logout" Background="#f43f4c" TextColor="White"></Button>
                                 </VerticalStackLayout>
                             </Border>
                         </Grid>
@@ -157,7 +158,7 @@
                             </CollectionView.ItemsLayout>
                             <CollectionView.ItemTemplate>
                                 <DataTemplate>
-                                    <templates:NewsCardTemplate Margin="0,0,10,0" WidthRequest="290" />
+                                    <templates:NewsCardTemplate Margin="0,0,5,0" WidthRequest="290" />
                                 </DataTemplate>
                             </CollectionView.ItemTemplate>
                         </CollectionView>
